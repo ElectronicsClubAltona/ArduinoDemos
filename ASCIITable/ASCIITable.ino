@@ -46,11 +46,11 @@ void loop() {
   // prints value as string as an ASCII-encoded decimal (base 10).
   // Decimal is the  default format for Serial.print() and Serial.println(),
   // so no modifier is needed:
-  Serial.print(thisByte);
+  //Serial.print(thisByte);
   // But you can declare the modifier for decimal if you want to.
   //this also works if you uncomment it:
 
-  // Serial.print(thisByte, DEC);
+   Serial.print(thisByte, DEC);
 
 
   Serial.print(", hex: ");
