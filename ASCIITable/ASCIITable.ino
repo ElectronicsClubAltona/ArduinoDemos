@@ -27,7 +27,7 @@ void setup() {
   }
 
   // prints title with ending line break
-  Serial.println("ASCII Table ~ Character Map");
+  Serial.println("ASCII Table ~ Character Map Demo for ECA");
 }
 
 // first visible ASCIIcharacter '!' is number 33:
