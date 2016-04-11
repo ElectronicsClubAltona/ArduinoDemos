@@ -20,6 +20,7 @@
  re-started dev 11 April 2016 by Mike Hewitt
  note mention of Wiznet Ethernet Shield
 ===> Using ATmega168 duemilanove and shield with 'HanRun' on Ethernet connector
+device is pingable - observe status LEDs on shield
  
 
 tested on own EtherMega on 8th September 2015  -
