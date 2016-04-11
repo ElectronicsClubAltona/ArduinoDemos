@@ -91,6 +91,7 @@ void loop() {
             client.print(analogChannel);
             client.print(" is ");
             client.print(sensorReading);
+            client.print(" Thanks Mike");
             client.println("<br />");
           }
           client.println("</html>");
