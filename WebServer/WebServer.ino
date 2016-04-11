@@ -28,6 +28,9 @@ worked OK - need to setup a MAC address and IP address
 maybe use a spare router
 Webpage should show the values on the analog inputs
 
+Sketch uses 12,882 bytes (89%) of program storage space. Maximum is 14,336 bytes.
+Global variables use 590 bytes (57%) of dynamic memory, leaving 434 bytes for local variables. Maximum is 1,024 bytes.
+
  */
 
 #include <SPI.h>
