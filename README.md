@@ -15,6 +15,10 @@ U    Upload
 S    Save
 T    AutoFormat aka Tidy  (some examples left untidy for you to tidy with ctrl-T)
 
+For info on NicroView see http://microview.io/Intro/general-overview-of-microview.html
+
+Reminder that Atmel and Microchip are now related http://www.atmel.com/
+
 
 
 
