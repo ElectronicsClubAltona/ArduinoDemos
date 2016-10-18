@@ -1,4 +1,8 @@
 /*
+   date of start of modifications 18 october 2016
+*/
+
+/*
   The circuit:
   Rotary Encoder:
   ROTA to digital pin 2
