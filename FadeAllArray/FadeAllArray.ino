@@ -1,15 +1,15 @@
 /*
- Fade
+  Fade
 
- This example shows how to fade an LED on pin 9
- using the analogWrite() function.
+  This example shows how to fade an LED on pin 9
+  using the analogWrite() function.
 
- This example code is in the public domain.
+  This example code is in the public domain.
 
- mod to allow a group of LEDs as defined in an array to be faded
- Mike Hewitt 20-Aug-2015
- remember to use Ctrl-T to auto format
- */
+  mod to allow a group of LEDs as defined in an array to be faded
+  Mike Hewitt 20-Aug-2015
+  remember to use Ctrl-T to auto format
+*/
 
 // change fadeArrayLen to reflect number in array - executing this shows which LEDs are PWMable
 // seems different for Arduino
@@ -47,7 +47,7 @@ void fadeAll() {
     analogWrite(fadeArray[f], brightness);
   }
   brightness = brightness + fadeAmount;
-  // notice that fadeAmount is set (written to) twice in loop() 
+  // notice that fadeAmount is set (written to) twice in loop()
   // brightness = brightness + fadeAmount;
   // brightness = brightness + fadeAmount;
   if (brightness <= 1 || brightness >= 255) {
