@@ -26,7 +26,9 @@
 auto my_lambda_func = [&](int x) { /*...*/ };
 auto my_onheap_lambda_func = new auto([=](int x) { /*...*/ });
 
-auto a_lambda_func = [](int x) { /*...*/ };
+auto a_lambda_func = [](int x) { /*.
+  
+  ..*/ };
 void (* func_ptr)(int) = a_lambda_func;
 
 
@@ -40,7 +42,7 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
+  delay(250);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+  delay(250);                       // wait for a second
 }
