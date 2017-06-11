@@ -23,17 +23,19 @@
 //#include <vector>
 //#include <iostream>
 
-auto my_lambda_func = [&](int x) { /*...*/ };
-auto my_onheap_lambda_func = new auto([=](int x) { /*...*/ });
-
-auto a_lambda_func = [](int x) { /*.
+//auto my_lambda_func = [&](int x) { /*...*/ };
+//auto my_onheap_lambda_func = new auto([=](int x) { /*...*/ });
+  int thisByte = 33;
   
-  ..*/ };
+auto a_lambda_func = [](int x) { 
+  thisByte = x * 80;
+  };
 void (* func_ptr)(int) = a_lambda_func;
 
 
 // the setup function runs once when you press reset or power the board
 void setup() {
+
   func_ptr(4); //calls the lambda.
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
@@ -42,7 +44,7 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(250);                       // wait for a second
+  delay(  thisByte);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(250);                       // wait for a second
+  delay(  thisByte);                       // wait for a second
 }
