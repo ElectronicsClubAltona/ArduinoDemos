@@ -36,13 +36,14 @@ void (* func_ptr)(int) = a_lambda_func;
 // the setup function runs once when you press reset or power the board
 void setup() {
 
-  func_ptr(4); //calls the lambda.
+//  func_ptr(4); //calls the lambda.
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
+    func_ptr(4); //calls the lambda.
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(  thisByte);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
