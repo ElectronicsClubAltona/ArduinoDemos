@@ -1,0 +1,3 @@
+/LATCH/ {++x}; END {print x}
+--dump-variables
+
