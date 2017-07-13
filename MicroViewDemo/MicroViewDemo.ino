@@ -26,7 +26,7 @@ void setup() {
 	uView.begin();		// begin of MicroView
 	uView.clear(ALL);	// erase hardware memory inside the OLED controller
 	uView.display();	// display the content in the buffer memory, by default it is the MicroView logo
-	setTime(10,10,01,17,1,2014);
+	setTime(10,10,01,13,7,2017);
 	delay(700);
 	uView.clear(PAGE);	// erase the memory buffer, when next uView.display() is called, the OLED will be cleared.
 }
