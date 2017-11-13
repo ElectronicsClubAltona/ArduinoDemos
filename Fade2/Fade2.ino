@@ -25,6 +25,7 @@ void setup() {
 /*
    Does not work as expected due to loop() being a continuous loop
    need to test at the zero crossing point of brightness
+   Fixed and operational on Black Tower
 
 */
 int swap (boolean v) {
