@@ -12,15 +12,23 @@
 
   http://www.arduino.cc/en/Tutorial/Fade
 */
+
+#define red 9
+#define green 11
+#define blue 10
+
 boolean flip = false;
 int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
-int fadeAmount = 5;    // how many points to fade the LED by
+int fadeAmount = 3;    // how many points to fade the LED by
+int counter = 1;
 
 // the setup routine runs once when you press reset:
 void setup() {
   // declare pin 9 to be an output:
   pinMode(led, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
 }
 /*
    Does not work as expected due to loop() being a continuous loop
@@ -30,19 +38,34 @@ void setup() {
 */
 int swap (boolean v) {
   if (v )
-    return 9;
+    return green;
   else
-    return 11;
+    return blue;
 }
+int cycleLED (int counterz ) {
 
+  int tv = counterz % 3;
+  if (tv == 0)
+    return red;
+  if (tv == 1)
+    return green;
+  if (tv == 2)
+    return blue;
+
+}
 
 // the loop routine runs over and over again forever:
 void loop() {
   // set the brightness of pin 9:
-  if (brightness <= 10)
-  { flip = ! flip;
-    led = swap(flip);
+  if (brightness <= 0)
+  { counter = counter + 1 ;
+    led = cycleLED (counter);
+    Serial.print( led);
   }
+  /*  { flip = ! flip;
+        led = swap(flip);
+      }
+  */
   analogWrite(led, brightness);
 
   // change the brightness for next time through the loop:
