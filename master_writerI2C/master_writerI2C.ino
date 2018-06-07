@@ -6,9 +6,14 @@
 // Refer to the "Wire Slave Receiver" example for use with this
 
 // Created 29 March 2006
-
 // This example code is in the public domain.
-
+/*  <ol>Todo:
+ *  <li>change hardware address on LCD to match code 
+ *  </li><li>add code for initialising LCD screen 
+ *  </li><li>send data to LCD screen
+ *  </li>
+ *  </ol>
+ */
 
 #include <Wire.h>
 
