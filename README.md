@@ -10,11 +10,17 @@ Source was built on an XUBUNTU laptop using Arduino IDE version 1.6.7 .
 The code is experimental and would often change.
 ====
 Control RUST:
+<ol>
+<li>
 R    Verify/Compile
+</li><li>
 U    Upload
+</li><li>
 S    Save
+</li><li>
 T    AutoFormat aka Tidy  (some examples left untidy for you to tidy with ctrl-T)
-
+</li>
+</ol>
 For info on MicroView see http://microview.io/Intro/general-overview-of-microview.html
 
 Reminder that Atmel and Microchip are now related http://www.atmel.com/
