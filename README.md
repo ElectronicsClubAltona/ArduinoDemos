@@ -23,9 +23,12 @@ T    AutoFormat aka Tidy  (some examples left untidy for you to tidy with ctrl-T
 </ol>
 For info on MicroView see <a href="http://microview.io/Intro/general-overview-of-microview.html">general-overview-of-microview</a>
 
-Reminder that Atmel and Microchip are now related <a href="http://www.atmel.com/">atmel</a>
+Reminder that Atmel and Microchip are now related <a href="http://www.atmel.com/">atmel</a> Download mplab x ide ...
+see <a href="http://electroteach.com/drupal/?q=node/214">mplab x ide</a>
+<br>
 Sun 09 Jul 2017 17:38:07 AEST 
-The MicroViewDemo works well from the ASUS Eee Seashell laptop.  
+The MicroViewDemo works well from the ASUS Eee Seashell laptop.<br>
+
 
 
 
