@@ -61,6 +61,7 @@ void loop() {
   { counter = counter + 1 ;
     led = cycleLED (counter);
     Serial.print( led);
+    Serial.print( " ");   
   }
   /*  { flip = ! flip;
         led = swap(flip);
