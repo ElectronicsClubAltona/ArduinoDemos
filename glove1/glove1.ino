@@ -6,7 +6,8 @@
 
    glove1 on 14-Aug-2015
    17-aug-2015
-   */
+   08-jan-2019
+*/
 
 // trying to fade a non-fadeable LED displays a JUMP in brightness  e.g. pin 2
 
@@ -32,13 +33,16 @@ void setup() {  // maybe add a serial connection here to avoid the hangs
 }
 
 void loop() {
- // pattern6();
+  // pattern6();
+  fadeAll2();
   pattern1();
   pattern1a();
   pattern2();
   pattern3();
   //pattern4();   // looks odd - unbalanced
   //pattern5();
+  //  fadeAll();
+
 }
 
 
@@ -145,4 +149,18 @@ void fadeAll() {
     }
     delay(30);
   }
+}
+
+void fadeAll2() {
+  for (int f = 0; f < fadeArrayLen; f++) {
+    analogWrite(fadeArray[f], brightness);
+  }
+  brightness = brightness + fadeAmount;
+  // notice that fadeAmount is set (written to) twice in loop()
+  // brightness = brightness + fadeAmount;
+  // brightness = brightness + fadeAmount;
+  if (brightness <= 1 || brightness >= 255) {
+    fadeAmount = -fadeAmount ;
+  }
+  delay(30);  // a delay here slows down the WHOLE loop
 }
