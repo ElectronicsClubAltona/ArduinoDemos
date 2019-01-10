@@ -1,1 +1,0 @@
-/LATCH/ {++x}; END {print x}
