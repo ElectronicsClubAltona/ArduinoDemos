@@ -16,19 +16,25 @@
  */
 
 #include <Wire.h>
-
+#define LCDadd 0
 void setup() {
-  Wire.begin(); // join i2c bus (address optional for master)
+//  Wire.begin(); // join i2c bus (address optional for master)
 }
 
 byte x = 0;
 
 void loop() {
-  Wire.beginTransmission(8); // transmit to device #8
+
+  for (int l = LCDadd; l < LCDadd+16 ; l ++) {
+  Wire.begin(l); // join i2c bus (address optional for master)
+  Wire.beginTransmission(l); // transmit to device #l
   Wire.write("x is ");        // sends five bytes
   Wire.write(x);              // sends one byte
   Wire.endTransmission();    // stop transmitting
 
   x++;
   delay(500);
+  }
+
+  
 }

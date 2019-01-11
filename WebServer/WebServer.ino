@@ -75,7 +75,7 @@ void loop() {
       if (client.available()) {
         char c = client.read();
         Serial.write(c);
-        // if you've gotten to the end of the line (received a newline
+        // if you got to the end of the line (received a newline
         // character) and the line is blank, the http request has ended,
         // so you can send a reply
         if (c == '\n' && currentLineIsBlank) {
