@@ -1,6 +1,13 @@
 //YWROBOT
 //Compatible with the Arduino IDE 1.0
 //Library version:1.1
+
+// adapted on 30April 2019
+/*
+ * why two lcd.init() ?
+ * why lcd.cursor(3,0) ?
+ * what backlight and can we reduce brightness ?
+ */
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -13,8 +20,8 @@ void setup()
   lcd.init();
   // Print a message to the LCD.
   lcd.backlight();
-  lcd.setCursor(3, 0);
-  lcd.print("Hello, world!");
+  lcd.setCursor(1, 0);  // ist arg for offset from LHS
+  lcd.print("Hello, world! M");
   lcd.setCursor(2, 1);
   lcd.print("Ywrobot Arduino!");
   lcd.setCursor(0, 2);
