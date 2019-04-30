@@ -1,3 +1,5 @@
+//#include <genieArduino.h>
+
 #define DATA 6
 #define LATCH 8
 #define CLOCK 10
