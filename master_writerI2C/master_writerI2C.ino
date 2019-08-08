@@ -16,7 +16,7 @@
  */
 
 #include <Wire.h>
-#define LCDadd 0
+#define LCDadd 0// x27   // check this out - maybe incorrect
 void setup() {
 //  Wire.begin(); // join i2c bus (address optional for master)
 }
