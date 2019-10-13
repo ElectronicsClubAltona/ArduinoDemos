@@ -10,7 +10,8 @@ void setup() {
   byte count = 0;
 
   Wire.begin();
-  for (byte i =6; i < 120; i++)
+
+  for (byte i = 6; i < 120; i++)
   {
     Wire.beginTransmission (i);
     if (Wire.endTransmission () == 0)
