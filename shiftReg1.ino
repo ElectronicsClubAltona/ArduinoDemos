@@ -14,7 +14,7 @@ int clockPin = 12;
 ////Pin connected to DS of 74HC595
 int dataPin = 11;
 
-//holders for infromation you're going to pass to shifting function
+//holders for information you're going to pass to shifting function
 byte data;
 byte dataArray[10];
 
