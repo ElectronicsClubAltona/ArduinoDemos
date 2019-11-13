@@ -52,7 +52,7 @@ void loop() {
       Serial.println("it's ASCII");
     }
     if (isWhitespace(thisChar)) {
-      Serial.println("it's whitespace");
+      Serial.println("it's white-space");
     }
     if (isControl(thisChar)) {
       Serial.println("it's a control character");
@@ -61,7 +61,7 @@ void loop() {
       Serial.println("it's a numeric digit");
     }
     if (isGraph(thisChar)) {
-      Serial.println("it's a printable character that's not whitespace");
+      Serial.println("it's a printable character that's not white-space");
     }
     if (isLowerCase(thisChar)) {
       Serial.println("it's lower case");
@@ -79,7 +79,7 @@ void loop() {
       Serial.println("it's upper case");
     }
     if (isHexadecimalDigit(thisChar)) {
-      Serial.println("it's a valid hexadecimaldigit (i.e. 0 - 9, a - F, or A - F)");
+      Serial.println("it's a valid hexadecimal digit (i.e. 0 - 9, a - F, or A - F)");
     }
 
     // add some space and ask for another byte:
