@@ -81,6 +81,9 @@ void loop() {
     if (isHexadecimalDigit(thisChar)) {
       Serial.println("it's a valid hexadecimal digit (i.e. 0 - 9, a - F, or A - F)");
     }
+    if (thisChar == 'a'|thisChar == 'e'|thisChar == 'i'|thisChar == 'o'|thisChar == 'u') {
+      Serial.println("a vowel ?");
+    }
 
     // add some space and ask for another byte:
     Serial.println();
