@@ -1,5 +1,14 @@
 //#include <genieArduino.h>
 
+// 14 november 2023 
+// modify this in prep for Colorduino - LED matrix from analogue port connector
+
+//pinMode(A0, OUTPUT);
+//digitalWrite(A0, HIGH);
+//pinMode(A0, INPUT_PULLUP);  // set pull-up on analog pin 0
+//https://docs.arduino.cc/learn/microcontrollers/analog-input
+
+
 #define DATA 6
 #define LATCH 8
 #define CLOCK 10
